@@ -28,15 +28,13 @@ function isCharAVowel(a) {
 }
 console.log('Exercise 3 Result:', isCharAVowel("a"));
 
-// Exercise 4: generateEmail()
-
+// Exercise 4: generateEmail() 
 function generateEmail(name, domain) {
   return `${name}@${domain}`
 }
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 
 // Exercise 5: greetUser()
-
 function greetUser(name, timeOfDay) {
 return `Good ${timeOfDay}, ${name}!`
 }
@@ -47,3 +45,10 @@ function maxOfThree() {
   return Math.max(5, 10, 8)
 }
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+
+// Exercise 7: calculateTip()
+function calculateTip(billNum, tipPercentage) {
+  return (tipPercentage/100)*(billNum)
+}
+console.log('Exercise 7 Result:', calculateTip(50, 20));
+
