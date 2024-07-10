@@ -8,7 +8,7 @@ const maxOfTwoNumbers = (x, y) => {
 };
 console.log("Exercise 1 Result:", maxOfTwoNumbers(3, 9));
 
-// Exercise 2: isAdult() 🚨Need Help🚨: Result is saying undefined
+// Exercise 2: isAdult()
 function isAdult(age) {
   if (age >= 18) {
     return 'Adult'
@@ -42,3 +42,8 @@ return `Good ${timeOfDay}, ${name}!`
 }
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
+// Exercise 6: maxOfThree()
+function maxOfThree() {
+  return Math.max(5, 10, 8)
+}
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
