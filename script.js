@@ -58,8 +58,15 @@ function convertTemperature(temp, scale) {
   fahrenheit = (temp * 9 / 5) + temp
   return fahrenheit
   } else {
-    celsius = (9 / 5) * temp - temp
-    return celsius
+    celsius = (9 / 5) * temp - temp;
+    return celsius;
   }
 }
 console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+
+// Exercise 9: basicCalculator()
+function basicCalculator(numA, numB, operation) {
+  let subtract = (numA - numB)
+  return subtract
+}
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
