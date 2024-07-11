@@ -52,3 +52,14 @@ function calculateTip(billNum, tipPercentage) {
 }
 console.log('Exercise 7 Result:', calculateTip(50, 20));
 
+// Exercise 8: convertTemperature()
+function convertTemperature(temp, scale) {
+  if (scale = 'C') {
+  fahrenheit = (temp * 9 / 5) + temp
+  return fahrenheit
+  } else {
+    celsius = (9 / 5) * temp - temp
+    return celsius
+  }
+}
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
