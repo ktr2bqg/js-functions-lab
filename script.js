@@ -18,14 +18,17 @@ function isAdult(age) {
 }
 console.log('Exercise 2 Result:', isAdult(21));
 
-// Exercise 3: isCharAVowel()
-function isCharAVowel(a) {
-  if (isAVowel = 'a, e, i, o, u') {
-    return true
+//Exercise 3
+function isCharAVowel(character) {
+  const vowels = ["a", "e", "i", "o", "u"];
+
+  if (!vowels.includes(character)) {
+    return false;
   } else {
-    return false
+    return true
   }
-}
+ }
+
 console.log('Exercise 3 Result:', isCharAVowel("a"));
 
 // Exercise 4: generateEmail() 
@@ -40,9 +43,11 @@ return `Good ${timeOfDay}, ${name}!`
 }
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
-// Exercise 6: maxOfThree()
-function maxOfThree() {
-  return Math.max(5, 10, 8)
+// Exercise 6: maxOfThree()🚨
+
+// For exercise 6, your logic is correct, however, you don't have any parameters set for the logic to use the arguments passed. 
+function maxOfThree(index) {
+  return Math.max(index)
 }
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
 
@@ -54,12 +59,12 @@ console.log('Exercise 7 Result:', calculateTip(50, 20));
 
 // Exercise 8: convertTemperature()
 function convertTemperature(temp, scale) {
-  if (scale = 'C') {
-  fahrenheit = (temp * 9 / 5) + temp
-  return fahrenheit
+  if (scale === 'C') {
+    const fahrenheit = (temp * 9 / 5) + temp
+    return fahrenheit
   } else {
-    celsius = (9 / 5) * temp - temp;
-    return celsius;
+    const celsius = (5 / 9) * (temp - 32)
+    return celsius
   }
 }
 console.log('Exercise 8 Result:', convertTemperature(32, "C"));
